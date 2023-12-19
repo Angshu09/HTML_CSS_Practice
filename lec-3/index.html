@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image tag, table tag, list tags</title>
+    <style>
+        /* img{
+            height: 200px;
+        } */
+
+        table{
+            border: 2px solid black;
+        }
+
+        td{
+            border: 2px solid black;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <h1>This is an image</h1>
+    <img height="200" src="avengers.jpg" alt="avengers">
+
+    <table>
+        <caption>Employee Details</caption>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Company</th>
+                <th>designation</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td rowspan="2">X</td>
+                <td>Accenture</td>
+                <td>Web Developer</td>
+            </tr>
+            <tr>
+                <!-- <td>Y</td> -->
+                <td>Cognizant</td>
+                <td >System Analyst</td>
+            </tr>
+            <tr>
+                <td colspan="2">Z</td>
+                <!-- <td colspan="2">TCS</td> -->
+                <td>Java Developer</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td>foot</td>
+                <td>foot</td>
+                <td>foot</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <ul>
+        <li>Google</li>
+        <li>Microsoft</li>
+        <li>Adobe</li>
+    </ul>
+
+    <ol>
+        <li>Google</li>
+        <li>Microsoft</li>
+        <li>Adobe</li>
+    </ol>
+
+    <ul type="square" >
+        <li>Google</li>
+        <li>Microsoft</li>
+        <li>Adobe</li>
+    </ul>
+
+    <ol type="I">
+        <li>Google</li>
+        <li>Microsoft</li>
+        <li>Adobe</li>
+    </ol>
+
+    <dl> <!--Definition list-->
+        <dt> <!--Definition term-->
+            Html
+        </dt>
+        <dd> <!--Definition data-->
+            Hyper text markup language
+        </dd>
+
+        <dt> 
+            CSS
+        </dt>
+        <dd> 
+            Cascading Style Sheets
+        </dd>
+
+        <dt> 
+            JavaScript
+        </dt>
+        <dd>
+            This is a scripting language
+        </dd>
+    </dl>
+
+
+</body>
+</html>
