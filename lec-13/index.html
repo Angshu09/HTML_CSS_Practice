@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Fonts in HTML</title>
+    <style>
+        .heading{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-style: italic;
+            font-size:medium;
+            color: red;
+        }
+
+        .para{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: 800;
+            line-height: 2; /*Used to give height in css*/
+            letter-spacing: 10px; /*used to give spacing in the letters*/
+        }
+
+        .name{
+            text-transform: capitalize;
+            text-decoration: underline;
+            text-decoration-color: aqua;
+            /* text-decoration-style: dotted; */
+            text-decoration-thickness: 8px;
+            text-indent: 45px; /*shift the content by 45px from left*/
+            text-align: center;
+        }
+
+        .name2{
+            text-transform: lowercase; /*we can use uppercase in same way*/
+        }
+
+        .lorem{
+            width: 70px;
+            border: 2px solid red;
+            overflow: hidden; /*by using that we adjust the content only in the box*/
+            /* text-overflow: ellipsis; */
+            /* word-break: break-all; */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="heading"><h1>HI! this is heading</h1></div>
+    <div class="para">
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum, sed. Vitae suscipit repudiandae natus ex magni nisi, nesciunt debitis official.
+        </p>
+    </div>
+
+    <div class="name">angshu das</div>
+    <div class="name2">MAKAUT</div>
+
+    <div class="lorem">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus esse nobis praesentium dolorum earum quidem eum, deleniti reiciendis voluptatibus aliquam vitae odio voluptatem in exercitationem. Dicta tempore deleniti praesentium expedita?
+    </div>
+</body>
+</html>
+
+<!--
+    Summary-
+    1. font-family: a, b;  
+    2. font-style: italic : make font italic (oblique)
+    3. font-weight: N ; use to make text bolder
+    4. font-size: N px; 
+    5. line-height: N px ; 
+    6. letter-spacing: N px; 
+    7.(i)  text-transform: capitalize
+    (ii) text-transform: lowercase
+    (iii) text-transform: uppercase
+    8.(i)  text-decoration-style: dotted
+    (ii)  text-decoration-color: red
+    (iii)  text-decoration-thickness: N px
+    (iv) text-decoration-line: underline
+    9. text-indent: N px
+    10. text-overflow: ellipsis; overflow: hiddem
+    11. word-break: break-all;
+    12. text-align:center
+    13. Ways to add color : color keyword, hex, rgb, rgba (a is alpha means opacity) , hsl
+    14. background-color:green; 
+    15. some font family: baloo bhai 2, poppins
+-->
