@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors in CSS</title>
+    <style>
+
+        *{
+            padding: 0;
+            margin: 0;
+        }
+
+        .red{
+            background-color: red;
+        }
+
+        .green{
+            background-color: green;
+        }
+
+
+
+        /* This is direct child selector  */
+        /* here it doesn't work - 
+        <div class="red">
+        I am a div
+        <article>
+            <p>I am a paragraph</p>
+        </article>
+        </div> */
+        div > p{
+            background-color: orange;
+            color: pink;
+        }
+
+
+
+
+        /* The child is just need to inside the div  */
+        div p{
+            background-color: orange;
+            color: blue;
+        }
+        
+
+
+        /* pseudo selectors */
+        a:visited{
+            color: red;
+        }
+
+        a:link{
+            color: green;
+        }
+
+        a:active{
+            background-color: brown;
+        }
+
+        p:first-child{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div class="red">
+        I am a div
+        <article>
+            <p>I am a paragraph</p>
+        </article>
+    </div>
+
+    <div class="green">
+        I am a div but I am green
+    </div>
+
+    <a href="https://google.com">Google</a>
+    <a href="https://facebook.com">FaceBook</a>
+
+    <main>
+        <p>I am first</p>
+        <p>I am second</p>
+    </main>
+</body>
+</html>

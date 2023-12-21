@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box model of CSS</title>
+    <style>
+        .box1{
+            background-color: red;
+            height: 200px;
+            border: 2px solid black;
+            padding: 20px;
+            margin: 30px;
+            box-sizing: border-box;
+        }
+
+        .box2{
+            background-color: yellow;
+            height: 200px;
+            border: 2px solid black;
+            padding: 20px;
+            margin: 35px; 
+        }
+
+        /* If we set 2 margins then bigger one will be set its called margin colapse */
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <p>This is box1</p>
+    </div>
+
+    <div class="box2">
+        <p>this is box2</p>
+    </div>
+</body>
+</html>
