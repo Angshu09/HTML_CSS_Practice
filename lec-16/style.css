@@ -1,0 +1,19 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.box{
+    border: 2px solid black;
+    background-color: aquamarine;
+    width: 300px;
+    /* display: inline; */
+    /* display: inline-block; */
+    /* for using margin, padding, height, width we use inline-block */
+    /* display: flex; */
+    display: inline-flex;
+    justify-content: center;
+    padding: 40px;
+    margin: 10px;
+}
