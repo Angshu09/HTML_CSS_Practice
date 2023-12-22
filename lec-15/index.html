@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Size Units</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+
+        .name{
+            box-sizing: border-box;
+            /* width: 1080px; */ 
+            width: 80vw;
+            height: 10vh;
+            margin: auto;
+            border: 2px solid black;
+            background-color: aqua;
+        }
+
+        .container{
+            box-sizing: border-box;
+            /* width: 1080px; */ 
+            width: 80vw;
+            height: 80vh;
+            margin: 25px auto;
+            border: 2px solid black;
+            background-color: aqua;
+            font-size: 16px;
+        }
+
+        .container p{
+            font-size: 2em;
+            /*  apply 2x of its inherited size(16px) */
+        }
+
+        html{
+            font-size: 10px;
+        }
+
+        .container2{
+            box-sizing: border-box;
+            /* width: 1080px; */ 
+            width: 80vw;
+            height: 80vh;
+            margin: 25px auto;
+            border: 2px solid black;
+            background-color: aqua;
+        }
+
+        .container2 p{
+            font-size: 2rem;
+            /* applied 2x of its root element in this case html is the root element(10px) */
+            width: 50%; 
+            /* means that the width is applied 50% of the parent */
+        }
+
+        .container3{
+            background-color: red;
+            color: white;
+            width: 100vmin;
+            margin: auto;
+        }
+
+        .container4{
+            box-sizing: border-box;
+            /* width: 1080px; */ 
+            width: 70vw;
+            min-height: 80vh;
+            margin: auto;
+            border: 2px solid black;
+            background-color: aqua;
+        }
+
+        .full{
+            box-sizing: border-box;
+            /* width: 1080px; */ 
+            width: 70vw;
+            height: 80vh;
+            margin: 25px auto;
+            border: 2px solid black;
+            background-color: aqua;
+        }
+
+        .full > div{
+            width: 50%;
+            border: 2px solid blue;
+        }
+
+        .full > div > div{
+            width: 50%;
+            /* % means applied the property respevtive of its parent  */
+            border: 2px solid green;
+        }
+    </style>
+</head>
+<body>
+    <div class="name"><p>Angshu Das</p></div>
+    <div class="container"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias assumenda provident iste a dolorum veniam. Autem, doloribus. Ratione, nemo reiciendis sapiente, ullam illo et numquam iure laboriosam incidunt iste expedita! Labore, voluptatibus natus vero harum magnam animi mollitia quas odio officia fugit assumenda dignissimos expedita?</p></div>
+
+    <div class="container2"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias assumenda provident iste a dolorum veniam. Autem, doloribus. Ratione, nemo reiciendis sapiente, ullam illo et numquam iure laboriosam incidunt iste expedita! Labore, voluptatibus natus vero harum magnam animi mollitia quas odio officia fugit assumenda dignissimos expedita?</p></div>
+
+    <div class="container4"><p>atis neque. Corpe deserunt asperiores placeat officiis mollitia praesentium repellat saepe illo dolore repellendus exerique, animi laudantium alias autem nemo cupiditate odit commodi ut. Vel provident quibusdam nisi dolores commodi perspiciatis aut quia molestiae ipsa, amet autem adipisci enim provident nulla temporibus dolore nobis obcaecati. Perspiciatis, unde, qui distinctio odit iure animi repudiandae dolptate esse ipsam eos vitae ullam voluptatibus laudantium! Impedit numquam repellat delectus enim! Dolorem animi tempora tempore iure molestiae? Repellendus distinctio esse quaerat eius vero qui laborum necessitatibus ex optio deserunt. Unde minus explicabo ullam odit animi tenetur sunt labore cupiditate. nt quae. Nobis obcaecati blanditiis excepturi minus aut alias nihil necessitatibus earum.</p></div>
+
+    <div class="full">
+        <div>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt rem ut saepe dolores, dolorum reprehenderit commodi eius? Quisquam autem ratione delectus repellat corrupti beatae nesciunt! Veritatis fuga corrupti iure voluptatem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, aut quia? At non iste blanditiis beatae dignissimos delectus porro, exercitationem unde cupiditate facilis. Praesentium perferendis natus in voluptas fugit atque vero ex? Fuga molestias fugiat corporis facere, aspernatur vel maxime at sapiente blanditiis laudantium voluptates aperiam nihil quibusdam sint autem minus nemo accusamus magni laboriosam tenetur ab quos labore delectus. Beatae, provident laudantium. Optio quod perferendis amet beatae reiciendis doloremque.
+
+            <div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo exercitationem itaque molestiae accusantium at eius dolores quo numquam! Ad tempora adipisci doloremque quos numquam nulla reprehenderit maxime tempore autem excepturi molestiae eaque ut aperiam accusantium laudantium vitae labore, enim sed ipsam laboriosam culpa ipsa delectus. Voluptatum ratione amet mollitia reprehenderit eveniet. Magnam, unde eius aspernatur error inventore optio molestias odit consectetur? Repellat labore corrupti eveniet, excepturi ab iste vero voluptates obcaecati, voluptatem ex quia. Exercitationem perspiciatis ipsa accusamus, saepe et delectus hic? Expedita quibusdam, reprehenderit vero animi aspernatur dicta vel eligendi quas delectus earum, in nulla labore, magnam inventore quae!
+            </div>
+        </div>
+    </div>
+
+    <div class="container3"> <h2>GOOD MORNING</h2></div>
+</body>
+</html>
+
+<!-- margin auto -> content placed in center, it works only in block elements,  -->
+<!-- link - https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units -->
+
