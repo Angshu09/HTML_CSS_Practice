@@ -1,0 +1,9 @@
+nav ul li{
+    list-style: devanagari ;
+    /* list-style-type: "📌" ; */
+    /* list-style:url(https://imgs.search.brave.com/78f4bXC5ejKo_RTfG9YbMuRzjVl26MYe5haC5fEE6ms/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9naWZm/aWxlcy5hbHBoYWNv/ZGVycy5jb20vMTQw/LzE0MDE4LmdpZg.gif); */
+    /* list-style: disc inside url(); */
+    list-style-position: inside;
+    background-color: yellow;
+    border: 2px solid black;
+}
