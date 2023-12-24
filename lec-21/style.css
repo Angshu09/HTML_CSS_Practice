@@ -1,0 +1,30 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --color: red;
+    --seccolor: green;
+    --pd: 30px;
+    --op: 0.8;
+}
+
+.navbar nav ul{
+    display: flex;
+    /* background-color: yellow; */
+    background-color: var(--color);
+}
+
+.navbar nav ul li{
+    list-style: none;
+    margin: 20px;
+}
+
+.para{
+    /* background-color: violet; */
+    background-color: var(--seccolor);
+    padding: var(--pd);
+    opacity: var(--op);
+}
+
