@@ -49,10 +49,12 @@ top: 1px; */
     /* position: fixed;
     bottom: 10vh;
     right: 0;
-    height: 100px;
- */
+    height: 100px; */
+
 }
 
 .box4{
     background-color: brown;
 }
+
+/* Exception: transform, filter, perspective can also make an element appear as positoned. */
