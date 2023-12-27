@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About float property and clear property</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+
+        .cards{
+            border: 2px solid black;
+            display: flow-root;
+        }
+
+        img{
+            float: right;
+            /* float: left; */
+        }
+
+        .card{
+            border: 2px solid red;
+        }
+
+        .card:nth-child(3){
+            clear: right;
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cards">
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/025/284/015/small_2x/close-up-growing-beautiful-forest-in-glass-ball-and-flying-butterflies-in-nature-outdoors-spring-season-concept-generative-ai-photo.jpg" alt="" width="233">
+        <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus architecto, tenetur incidunt impedit aspernatur hic culpa et eum quo dignissimos voluptatum ducimus vel possimus beatae! Rerum eius iure aperiam tenetur.</div>
+        <div class="card">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum aspernatur nisi minus hic quibusdam a nulla nesciunt provident quisquam error, debitis similique, voluptates laudantium ratione placeat dolorum quas, quis odio! Obcaecati asperiores illum amet, soluta quas corrupti, minima nemo ut, repudiandae aut velit tempore eligendi?</div>
+        <div class="card">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus accusamus culpa quas, explicabo ad corporis eos molestias obcaecati iure ut quae minus fugit nesciunt aspernatur quaerat, eum officia molestiae suscipit distinctio! Voluptatem id dignissimos excepturi provident aliquid temporibus, quasi iure natus, aut magnam eveniet quos aspernatur ut molestias sit quo maxime inventore suscipit eos deleniti doloremque. Optio, eveniet earum! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum dolore quaerat eligendi? Quod exercitationem eos minus impedit! Nemo delectus tempora facere laborum veritatis doloremque perferendis magni dolores id molestias itaque maiores reprehenderit provident soluta cupiditate, eveniet officiis. Ipsum veritatis iure sit veniam! Beatae at sit nisi, cumque iure dolor reprehenderit porro asperiores debitis non ex labore consequatur eos a dolorem numquam eum explicabo eligendi totam quidem excepturi. Vero tempore consequatur explicabo, illum, eum aspernatur quibusdam cupiditate totam voluptatibus quos facere alias voluptates. Explicabo magnam possimus dolore dolorem ut sit.</div>
+    </div>
+</body>
+</html>
