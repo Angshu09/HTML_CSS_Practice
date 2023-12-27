@@ -1,0 +1,102 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    position: sticky;
+    top: 0px;
+}
+
+nav{
+    height: 10vh;
+    width: 100%;
+    background-color: #380338;
+    color: azure;
+    display: flex;
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+}
+
+nav ul li{
+    margin-left: 30px;
+}
+
+.container{
+    background-color: rgb(104, 57, 104);
+    padding:50px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.box1{
+    width: 400px;
+    background-color: rgb(153, 85, 153);
+    color: white;
+    border: 1.5px solid black;
+   
+}
+
+.box1 p{
+    margin-left: 34px;
+    margin-top: 20px;
+}
+
+.box2{
+
+    width: 400px;
+    background-color: rgb(153, 85, 153);
+    color: white;
+    border: 1.5px solid black;
+    
+}
+
+.box2 p{
+    margin-left: 34px;
+    margin-top: 20px;
+}
+
+.foot {
+    padding: 20px 0;
+    background-color: #380338;
+    color: azure;
+    text-align: center;
+}
+
+.container2{
+    background-color: rgb(104, 57, 104);
+    padding: 30px ;
+}
+
+.comment{
+    width: 300px;
+    background-color: rgb(226, 174, 226);
+    margin: auto;
+    padding: 40px;
+    border-radius: 450px;
+    text-align: center;
+}
+
+.main{
+    height: 80vh;
+ 
+}
+
+.chat{
+    position: fixed;
+    left: 30px;
+    top: 200px;
+}
+
+.chat img{
+    width: 60px;
+    
+}
+
+
