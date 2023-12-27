@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More about selectors</title>
+
+    <style>
+
+        /* .box:first-child{
+            background-color: red;
+            color: white;
+        } */
+
+        /* .box:nth-child(3){
+            background-color: red;
+        } */
+
+        /* .box:nth-child(odd){
+            background-color: red;
+            color: yellow;
+        } */
+
+        /* .box::first-line{
+            color: red;
+        } */
+
+        /* .box::first-letter{
+            color: yellow;
+        } */
+
+        /* .boxes *{
+            border: 2px solid black;
+        } */
+
+        /* [character = "Naruto"]{
+            background: red;
+        } */
+
+        /* .box, [character = "Naruto"]{
+            background: red;
+        } */
+
+        /* .box:nth-last-child(2){
+            background-color: red;
+        } */
+
+        /* .box::before{
+            content: "hi";
+            color: yellow;
+        } */
+
+        /* .box::after{
+            content: "hi";
+            color: yellow;
+        } */
+
+        /* .boxes::before{
+            content: "hi";
+            color: red;
+        } */
+
+        /* These are called pseudo elements */
+
+        ::selection{
+            color: aqua;
+            background-color: black;
+        }
+
+        input::placeholder{
+            color: blue;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div class="box">
+          I am box 1
+        </div>
+
+        <div character = "Naruto" class="box">
+            I am box 2
+         </div>
+
+         <div class="box">
+            I am box 3
+         </div>
+
+         <input type="" placeholder="Enter your name">
+    </div>
+</body>
+</html>
