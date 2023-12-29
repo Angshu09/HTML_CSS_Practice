@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About CSS transforms</title>
+    <style>
+        .container{
+            height: 80vh;
+            width: 100vw;
+            border: 2px solid purple;
+           
+        }
+
+        .item1{
+            height: 60px;
+            width: 60px;
+            background-color: aqua;
+            border: 2px solid red;
+            transform: rotate(30deg);
+            transform-origin: 32% 0%;
+            /* transform:rotatex(60deg) ; */
+            /* transform: rotate(0.5turn); */
+            /* transform: scaley(1.5); */
+            /* transform: skew(60deg);  --> skew is not applied for z axis*/ 
+            /* transform: translatey(100%); */
+            /* transform: translatey(100%) skewy(40deg) translatex(45%); */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item1">Box1</div>
+    </div>
+</body>
+</html>
+
+<!-- CSS 2D Transform
+This property allows the content to be restructured in ways like translate, rotate, scale or skew, etc.
+As it is 2D, therefore the content is transformed into x and y dimensions. -->
