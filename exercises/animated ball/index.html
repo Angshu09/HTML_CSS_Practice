@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated ball</title>
+    <style>
+        .container{
+            height:80vh;
+            width: 100vw;
+            background-color: rgb(68, 68, 183);
+            display: flex;
+            position: absolute;
+        }
+
+        .box{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 122px;
+            width: 122px;
+            border-radius: 50%;
+            background-color: red;
+            animation: aniy 1s ease-out infinite alternate, anix 3s linear infinite;
+        }
+
+        @keyframes aniy{
+            from{
+                bottom: 0;
+            }
+            to{
+                bottom:100% ;
+            }
+        }
+
+        @keyframes anix{
+            from{
+                left: 0;
+            }
+            to{
+                left: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box animate">
+
+        </div>
+    </div>
+</body>
+</html>
